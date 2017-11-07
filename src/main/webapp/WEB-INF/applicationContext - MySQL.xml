@@ -15,8 +15,8 @@
 
     <!-- middleware datasource  -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
-          p:driverClassName="oracle.jdbc.driver.OracleDriver" p:url="jdbc:oracle:thin:@localhost:1521:merch"
-          p:username="SYS" p:password="12345678"
+          p:driverClassName="com.mysql.jdbc.Driver" p:url="jdbc:mysql://localhost/merch"
+          p:username="root" p:password=""
           p:initialSize="2"
           p:maxActive="30"
           p:maxIdle="10"
